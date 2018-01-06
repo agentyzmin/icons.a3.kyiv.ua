@@ -177,6 +177,10 @@ a:active{
 	text-align: center;
 }
 
+.icons{
+  height: 100px;
+}
+
 .license{
     font-size: 12px;
     padding-top: 50px;
@@ -257,28 +261,30 @@ a:active{
 window.onload = function () {
 
 var images = [
-"assets/SVG/Transit Icons_01 Metro Logo.svg",
-"assets/SVG/Transit Icons_02 Urban Logo.svg",
-"assets/SVG/Transit Icons_03 Funicular Logo.svg",
-"assets/SVG/Transit Icons_04 M1.svg",
-"assets/SVG/Transit Icons_05 M2.svg",
-"assets/SVG/Transit Icons_06 M3.svg",
-"assets/SVG/Transit Icons_07 M4.svg",
-"assets/SVG/Transit Icons_08 Tram.svg",
-"assets/SVG/Transit Icons_09 Bus.svg",
-"assets/SVG/Transit Icons_10 Trolley.svg",
-"assets/SVG/Transit Icons_11 Train.svg",
-"assets/SVG/Transit Icons_12 Marshrutka.svg",
-"assets/SVG/Transit Icons_13 Funicular.svg",
-"assets/SVG/Transit Icons_14 Airport.svg",
-"assets/SVG/Transit Icons_15 Railway Station.svg",
-"assets/SVG/Transit Icons_16 Bus Station.svg",
-"assets/SVG/Transit Icons_17 Port.svg",
-"assets/SVG/Transit Icons_18 Bike.svg",
-"assets/SVG/Transit Icons_19 Bike Stencil.svg",
-"assets/SVG/Transit Icons_20 Disabled.svg",
-"assets/SVG/Transit Icons_21 Pedestrian.svg"
+"assets/SVG/Metro Logo.svg",
+"assets/SVG/Urban Rail Log",
+"assets/SVG/Funicular Logo.svg",
+"assets/SVG/Metro M1.svg",
+"assets/SVG/Metro M2.svg",
+"assets/SVG/Metro M3.svg",
+"assets/SVG/Metro M4.svg",
+"assets/SVG/Tram.svg",
+"assets/SVG/Bus.svg",
+"assets/SVG/Trolley.svg",
+"assets/SVG/Marshrutka.svg",
+"assets/SVG/Funicular.svg",
+"assets/SVG/Train.svg",
+"assets/SVG/Airport.svg",
+"assets/SVG/Railway Station.svg",
+"assets/SVG/Bus Station.svg",
+"assets/SVG/Port.svg",
+"assets/SVG/Bike.svg",
+"assets/SVG/Bike Stencil.svg",
+"assets/SVG/Disabled.svg",
+"assets/SVG/Pedestrian.svg"
 ];
+
+
 
 images.current = 0;
 
@@ -302,7 +308,7 @@ setInterval(function () {
   </a></div>
 
 <div class="top-section section col-12 col-lg-8 col-sm-10 mx-auto center">
-<img id="myImage" src="assets/SVG/Transit%20Icons_01%20Metro%20Logo.svg" style="width:150px">
+<img id="myImage" src="assets/SVG/Metro Logo.svg" style="height: 100px">
 <h1 class="page-title">Транспортні іконки Києва</h1>
 <p>Версія 2.0</p>
 <p class="col-sm-12 col-lg-10 offset-lg-1 lead">Логотип метро, міської електрички, фунікулеру та інші іконки транспорту, що ми викоритовуємо для створення єдиної транспортної навігації. Безкоштовно. З&nbsp;вільною ліцензією.</p>
@@ -333,27 +339,37 @@ setInterval(function () {
 <div class="section">
 	<h2 class="center mb-5">Що всередині</h2>
 	<div class="row col-sm-12 col-lg-10 offset-lg-1">
-		<div class="center col-6 col-sm-3 col-lg-2"><img src="assets/SVG/Transit%20Icons_01%20Metro%20Logo.svg" width="100%" alt=""><div class="card-text">Метро</div></div>
-		<div class="center col-6 col-sm-3 col-lg-2"><img src="assets/SVG/Transit Icons_02 Urban Logo.svg" alt=""><div class="card-text">Міська електричка</div></div>
-		<div class="center col-6 col-sm-3 col-lg-2"><img src="assets/SVG/Transit Icons_03 Funicular Logo.svg" alt=""><div class="card-text">Фунікулер (лого)</div></div>
-		<div class="center col-6 col-sm-3 col-lg-2"><img src="assets/SVG/Transit Icons_04 M1.svg" alt=""><div class="card-text">Червона лінія метро М1</div></div>
-		<div class="center col-6 col-sm-3 col-lg-2"><img src="assets/SVG/Transit Icons_05 M2.svg" alt=""><div class="card-text">Синя лінія метро М2</div></div>
-		<div class="center col-6 col-sm-3 col-lg-2"><img src="assets/SVG/Transit Icons_06 M3.svg" alt=""><div class="card-text">Зелена лінія метро М3</div></div>
-		<div class="center col-6 col-sm-3 col-lg-2"><img src="assets/SVG/Transit Icons_07 M4.svg" alt=""><div class="card-text">Четверта лінія метро (на&nbsp;Троєщину)</div></div>
-		<div class="center col-6 col-sm-3 col-lg-2"><img src="assets/SVG/Transit Icons_08 Tram.svg" alt=""><div class="card-text">Трамвай</div></div>
-		<div class="center col-6 col-sm-3 col-lg-2"><img src="assets/SVG/Transit Icons_09 Bus.svg" alt=""><div class="card-text">Автобус</div></div>
-		<div class="center col-6 col-sm-3 col-lg-2"><img src="assets/SVG/Transit Icons_10 Trolley.svg" alt=""><div class="card-text">Тролейбус</div></div>
-		<div class="center col-6 col-sm-3 col-lg-2"><img src="assets/SVG/Transit Icons_12 Marshrutka.svg" alt=""><div class="card-text">Маршрутка</div></div>
-		<div class="center col-6 col-sm-3 col-lg-2"><img src="assets/SVG/Transit Icons_13 Funicular.svg" alt=""><div class="card-text">Фунікулер</div></div>
-		<div class="center col-6 col-sm-3 col-lg-2"><img src="assets/SVG/Transit Icons_11 Train.svg" alt=""><div class="card-text">Залізниця</div></div>
-		<div class="center col-6 col-sm-3 col-lg-2"><img src="assets/SVG/Transit Icons_14 Airport.svg" alt=""><div class="card-text">Аеропорт</div></div>
-		<div class="center col-6 col-sm-3 col-lg-2"><img src="assets/SVG/Transit Icons_15 Railway Station.svg" alt=""><div class="card-text">Залізничний вокзал</div></div>
-		<div class="center col-6 col-sm-3 col-lg-2"><img src="assets/SVG/Transit Icons_16 Bus Station.svg" alt=""><div class="card-text">Автовокзал</div></div>
-		<div class="center col-6 col-sm-3 col-lg-2"><img src="assets/SVG/Transit Icons_17 Port.svg" alt=""><div class="card-text">Порт</div></div>
-		<div class="center col-6 col-sm-3 col-lg-2"><img src="assets/SVG/Transit Icons_18 Bike.svg" alt=""><div class="card-text">Велотранспорт</div></div>
-		<div class="center col-6 col-sm-3 col-lg-2"><img src="assets/SVG/Transit Icons_19 Bike Stencil.svg" alt=""><div class="card-text">Велотранспорт (трафарет)</div></div>
-		<div class="center col-6 col-sm-3 col-lg-2"><img src="assets/SVG/Transit Icons_20 Disabled.svg" alt=""><div class="card-text">Людина з інвалідністю</div></div>
-		<div class="center col-6 col-sm-3 col-lg-2"><img src="assets/SVG/Transit Icons_21 Pedestrian.svg" alt=""><div class="card-text">Пішохід</div></div>
+		<div class="center col-6 col-sm-3 col-lg-2"><img class="icons" src="assets/SVG/Metro Logo.svg" alt=""><div class="card-text">Метро</div></div>
+		<div class="center col-6 col-sm-3 col-lg-2"><img class="icons" src="assets/SVG/Urban Rail Logo.svg" alt=""><div class="card-text">Міська електричка</div></div>
+		<div class="center col-6 col-sm-3 col-lg-2"><img class="icons" src="assets/SVG/Funicular Logo.svg" alt=""><div class="card-text">Фунікулер (лого)</div></div>
+		<div class="center col-6 col-sm-3 col-lg-2"><img class="icons" src="assets/SVG/Metro M1.svg" alt=""><div class="card-text">Червона лінія метро М1</div></div>
+		<div class="center col-6 col-sm-3 col-lg-2"><img class="icons" src="assets/SVG/Metro M2.svg" alt=""><div class="card-text">Синя лінія метро М2</div></div>
+		<div class="center col-6 col-sm-3 col-lg-2"><img class="icons" src="assets/SVG/Metro M3.svg" alt=""><div class="card-text">Зелена лінія метро М3</div></div>
+		<div class="center col-6 col-sm-3 col-lg-2"><img class="icons" src="assets/SVG/Metro M4.svg" alt=""><div class="card-text">Четверта лінія метро (на&nbsp;Троєщину)</div></div>
+		<div class="center col-6 col-sm-3 col-lg-2"><img class="icons" src="assets/SVG/Tram.svg" alt=""><div class="card-text">Трамвай</div></div>
+		<div class="center col-6 col-sm-3 col-lg-2"><img class="icons" src="assets/SVG/Bus.svg" alt=""><div class="card-text">Автобус</div></div>
+		<div class="center col-6 col-sm-3 col-lg-2"><img class="icons" src="assets/SVG/Trolley.svg" alt=""><div class="card-text">Тролейбус</div></div>
+		<div class="center col-6 col-sm-3 col-lg-2"><img class="icons" src="assets/SVG/Marshrutka.svg" alt=""><div class="card-text">Маршрутка</div></div>
+		<div class="center col-6 col-sm-3 col-lg-2"><img class="icons" src="assets/SVG/Funicular.svg" alt=""><div class="card-text">Фунікулер</div></div>
+		<div class="center col-6 col-sm-3 col-lg-2"><img class="icons" src="assets/SVG/Train.svg" alt=""><div class="card-text">Залізниця</div></div>
+		<div class="center col-6 col-sm-3 col-lg-2"><img class="icons" src="assets/SVG/Airport.svg" alt=""><div class="card-text">Аеропорт</div></div>
+		<div class="center col-6 col-sm-3 col-lg-2"><img class="icons" src="assets/SVG/Railway Station.svg" alt=""><div class="card-text">Залізничний вокзал</div></div>
+		<div class="center col-6 col-sm-3 col-lg-2"><img class="icons" src="assets/SVG/Bus Station.svg" alt=""><div class="card-text">Автовокзал</div></div>
+		<div class="center col-6 col-sm-3 col-lg-2"><img class="icons" src="assets/SVG/Port.svg" alt=""><div class="card-text">Порт</div></div>
+		<div class="center col-6 col-sm-3 col-lg-2"><img class="icons" src="assets/SVG/Bike.svg" alt=""><div class="card-text">Велотранспорт</div></div>
+		<div class="center col-6 col-sm-3 col-lg-2"><img class="icons" src="assets/SVG/Bike Stencil.svg" alt=""><div class="card-text">Велотранспорт (трафарет)</div></div>
+		<div class="center col-6 col-sm-3 col-lg-2"><img class="icons" src="assets/SVG/Disabled.svg" alt=""><div class="card-text">Людина з інвалідністю</div></div>
+		<div class="center col-6 col-sm-3 col-lg-2"><img class="icons" src="assets/SVG/Pedestrian.svg" alt=""><div class="card-text">Пішохід</div></div>
+
+
+
+
+
+
+
+
+
+
 
 
 		<!-- <div class="icon-card center col-lg-2"><img src="svg/" alt=""><div class="card-text"></div></div> -->
