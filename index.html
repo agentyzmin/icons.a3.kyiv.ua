@@ -17,6 +17,9 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
     <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/ilyabirman-likely@2/release/likely.css">
+
+
 </head>
 <style type="text/css">
 @font-face {
@@ -254,6 +257,18 @@ a:active{
   margin-bottom: 100px;
 }
 
+.likely .likely__widget {
+    background: none;
+    font-family: 'proba_nav2';
+}
+.likely .likely__button {
+    padding: 3px 4px 1px 2px;
+}
+
+.likely .likely__counter {
+    padding: 3px 4px;
+}
+
 
 </style>
 <script type="text/javascript">
@@ -302,6 +317,8 @@ setInterval(function () {
 </head>
 <body>
 
+<script src="https://unpkg.com/ilyabirman-likely@2/release/likely.js"></script>
+
 <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script> -->
 <div class="col-lg-10 offset-lg-1">
 	<a href="http://a3.kyiv.ua" style="text-decoration: none;">
@@ -316,8 +333,15 @@ setInterval(function () {
 
 <button class="btn btn-primary btn-lg mt-3" onclick="location.href='#/releases/latest';">Завантажити пакунок</button>
 <!-- <button class="btn btn-outline-secondary btn-lg mt-3" onclick="location.href='https://github.com/agentyzmin/kyiv-transport-icons';">Fork on Github</button> -->
-<div class="text-muted" style="margin-top: 15px; font-size: 13px;">1,3 МБ, формати SVG та PNG</div> 
+<div class="text-muted" style="margin-top: 10px; font-size: 13px;">1,3 МБ, формати SVG та PNG</div> 
 
+<div class="likely" style="margin-top: 30px;">
+    <div class="facebook">Поширити</div>
+    <div class="twitter">Твітнути</div>
+    <div class="gplus">+1</div>
+    <div class="pinterest">Запінити</div>
+    <div class="telegram">Надіслати</div>
+</div>
 
 
 <div class="license center">
