@@ -4,6 +4,10 @@ cache:
   yarn: true
   directories:
   - node_modules
+addons:
+  apt:
+    packages:
+    - librsvg2
 before_install:
 - convert -list format | grep SVG
 script:
