@@ -1,0 +1,23 @@
+language: node_js
+node_js: 8
+cache:
+  yarn: true
+  directories:
+  - node_modules
+before_install:
+- npm i -g webpack
+script:
+- npm run build
+- mkdir -p dist/assets/png@{1..2}x
+- |
+  for f in dist/assets/svg/*.svg
+  do
+    img_name=$(echo $f | sed 's/\.svg$//g;s/^.\{16\}//g')
+    for n in {1..2}
+    do
+      convert -density 300 -resize ${n}00x -background none \
+        "dist/assets/svg/$img_name.svg" \
+        "dist/assets/png@${n}x/$img_name.png"
+    done &
+    wait
+  done
