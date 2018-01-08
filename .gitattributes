@@ -1,0 +1,4 @@
+* text=auto eol=lf
+
+# override repo's package-lock.json with our version
+package-lock.json merge=ours
