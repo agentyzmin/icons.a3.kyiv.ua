@@ -18,8 +18,7 @@ script:
       convert -density 300 -resize ${n}00x -background none \
         "dist/assets/svg/$img_name.svg" \
         "dist/assets/png@${n}x/$img_name.png"
-    done &
-    wait
+    done
   done
 deploy:
   provider: pages
