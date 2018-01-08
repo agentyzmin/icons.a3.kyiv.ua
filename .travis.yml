@@ -7,7 +7,7 @@ cache:
 addons:
   apt:
     packages:
-    - librsvg2-dev
+    - inkscape
 before_install:
 - convert -list format | grep SVG
 script:
@@ -19,9 +19,10 @@ script:
     img_name=$(echo $f | sed 's/\.svg$//g;s/^.\{16\}//g')
     for n in {1..2}
     do
-      convert -density 300 -resize ${n}00x -background none \
-        svg:"dist/assets/svg/$img_name.svg" \
-        "dist/assets/png@${n}x/$img_name.png" \
+      inkscape -z \
+        -e "dist/assets/png@${n}x/$img_name.png" \
+        -w "${n}00" \
+        "dist/assets/svg/$img_name.svg" \
         &
     done
     wait
