@@ -7,7 +7,7 @@ cache:
 addons:
   apt:
     packages:
-    - librsvg2
+    - librsvg2-dev
 before_install:
 - convert -list format | grep SVG
 script:
