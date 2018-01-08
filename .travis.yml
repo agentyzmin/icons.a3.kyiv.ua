@@ -4,12 +4,8 @@ cache:
   yarn: true
   directories:
   - node_modules
-addons:
-  apt:
-    packages:
-    - inkscape
 before_install:
-- convert -list format | grep SVG
+- npm install -g svgexport
 script:
 - npm run build
 - mkdir -p dist/assets/png@{1..2}x
@@ -19,10 +15,11 @@ script:
     img_name=$(echo $f | sed 's/\.svg$//g;s/^.\{16\}//g')
     for n in {1..2}
     do
-      inkscape -z \
-        -e "dist/assets/png@${n}x/$img_name.png" \
-        -w "${n}00" \
+      svgexport \
         "dist/assets/svg/$img_name.svg" \
+        "dist/assets/png@${n}x/$img_name.png" \
+        "100%" \
+        "${n}00:" \
         &
     done
     wait
