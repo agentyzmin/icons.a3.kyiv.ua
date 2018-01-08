@@ -24,6 +24,11 @@ script:
     done
     wait
   done
+- |
+  for t in svg png@{1..2}x
+  do
+    tar czvf "a3-kyiv-transport-icons-${t}.tar.gz" "dist/assets/${t}"
+  done
 deploy:
   provider: pages
   allow-empty-commit: true
