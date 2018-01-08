@@ -21,3 +21,14 @@ script:
     done &
     wait
   done
+deploy:
+  provider: pages
+  allow-empty-commit: true
+  # FIXME: uncomment following line once ready
+  # fqdn: icons.a3.kyiv.ua
+  github-token:
+    secure: "C7NFWC4XmFyKSoAOFYkayN23VA3BfbZoPovT2SdhUzixFm6p1rADYxTFrTUVUb4HpCDQwvXmcwx/xmSKx8SrTAdvxyvJzGaCci31OxFdQnJdPpUXqHbsF0OGAl557iSNpbQA1gaBupn/d3CdZjn1ZwSWIMXpE5b3NMJMRj7/5EVTFG0k0qLbPdQrfdzNCecC/p2ulb0eV0dFd8jbPzUvyEqDRHj+2ikZu2/BJlkktY4I5AnP/04acfllVaJIkTkK411M2RSF2n6rnv9KVMpyrqzH5BrcJzJAM9VaVQOXDFW8lHy47BfukSGBymanJvTVdG/fBNEzg4OQwDf2zD9rOXMcKm3kVIJsxEUDnUcRGOWgmB/Yu+0TqGfOdfn0I5ya9RapufrWrmDJ/dItamyXBELacSoWsf+49bUISwHUQvncgnjgJpLppRmBpAF2cMm2hl2QVKpBjSqzss3RUh4ykCsPkaF7IeScz2hudL44Auo7j5wnDtAAE5mLMCacKbWkwul1Wjt4PFu3yLq4DYIX3psaJLtJkdBQHa4PDFqlXy1XpOZJIZQVTndtMnMtIPL37VChEehawIOdeDHqvEFujMuMMSLORUdrb+hzzyHvlRqbhuPEyIGoRGuDC0v/oMJRJw4uXefzeInjZZmtLo0MTyDiRB931HR1ijbNEQXAF3M="
+  keep-history: true
+  local-dir: dist
+  skip-cleanup: true
+  target-branch: gh-pages
