@@ -4,6 +4,8 @@ cache:
   yarn: true
   directories:
   - node_modules
+before_install:
+- convert -list format | grep SVG
 script:
 - npm run build
 - mkdir -p dist/assets/png@{1..2}x
