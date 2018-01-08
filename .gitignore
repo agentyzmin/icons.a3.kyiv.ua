@@ -1,5 +1,3 @@
-# Gener  GNU nano 2.0.6                                               File: .gitignore                                                                                            Modified
-
 # General
 .DS_Store
 .AppleDouble
@@ -22,8 +20,6 @@ Icon/r
 .VolumeIcon.icns
 .com.apple.timemachine.donotpresent
 
-^G Get Help                   ^O WriteOut                   ^R Read File                  ^Y Prev Page                  ^K Cut Text                   ^C Cur Pos
-^X Exit                       ^J Justify                    ^W Where Is                   ^V Next Page                  ^U UnCut Text                 ^T To Spellal
 .DS_Store
 .AppleDouble
 .LSOverride
