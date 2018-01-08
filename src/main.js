@@ -1,6 +1,8 @@
-window.onload = function () {
+window.onload = () => {
 
-  var images = [
+  const img = document.querySelector('#logo-carousel')
+
+  const images = [
     'Metro Logo.svg',
     'Urban Rail Logo.svg',
     'Funicular Logo.svg',
@@ -22,16 +24,14 @@ window.onload = function () {
     'Bike Stencil.svg',
     'Disabled.svg',
     'Pedestrian.svg',
-  ].map(function(img) {return 'assets/svg/' + img})
+  ].map((img) => 'assets/svg/' + img)
 
 
   images.current = 1
 
-  var img = document.querySelector('#logo-carousel')
-
-  setInterval(function () {
-      img.src = images[ images.current++ ];
-      if (images.current === images.length) images.current = 0;
+  setInterval(() => {
+      img.src = images[ images.current++ ]
+      if (images.current === images.length) images.current = 0
   }, 600);
 
 }

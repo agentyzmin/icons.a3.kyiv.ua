@@ -1,5 +1,5 @@
 // Global site tag (gtag.js) - Google Analytics
-(function()
+(() =>
 {
   const script = document.createElement('script')
         script.src = 'https://www.googletagmanager.com/gtag/js?id=UA-71269206-7'
