@@ -44,7 +44,7 @@ deploy:
   api_key: *gh-token
   file_glob: true
   file:
-  - assets/svg/*
-  - assets/png@1x/*
-  - assets/png@2x/*
+  - dist/assets/svg/*
+  - dist/assets/png@1x/*
+  - dist/assets/png@2x/*
   skip_cleanup: true
