@@ -53,3 +53,5 @@ deploy:
   file_glob: true
   file: dist/assets/*.{tar.gz,zip}
   skip_cleanup: true
+  on:
+    tags: true
