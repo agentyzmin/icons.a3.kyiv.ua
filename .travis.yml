@@ -25,14 +25,18 @@ script:
   done
   wait
 - |
+  pushd dist/assets/
   for t in svg png@{1..2}x
   do
-    tar czvf "dist/assets/a3-kyiv-transport-icons-${t}.tar.gz" "dist/assets/${t}"
-    zip -r "dist/assets/a3-kyiv-transport-icons-${t}.zip" "dist/assets/${t}"
+    tar czvf "a3-kyiv-transport-icons-${t}.tar.gz" "${t}/"
+    zip -r "a3-kyiv-transport-icons-${t}.zip" "${t}/"
   done
+  popd
 - |
-  tar czvf "dist/assets/a3-kyiv-transport-icons.tar.gz" dist/assets/{svg,png@{1..2}x}
-  zip -r "dist/assets/a3-kyiv-transport-icons.zip" dist/assets/{svg,png@{1..2}x}
+  pushd dist/assets/
+  tar czvf "a3-kyiv-transport-icons.tar.gz" {svg,png@{1..2}x}
+  zip -r "a3-kyiv-transport-icons.zip" {svg,png@{1..2}x}
+  popd
 deploy:
 - provider: pages
   allow-empty-commit: true
