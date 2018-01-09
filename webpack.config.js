@@ -27,11 +27,15 @@ module.exports = {
           }
         }
       },
+      {
+        test: /\.hbs$/,
+        loader: 'handlebars-loader'
+      },
     ]
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: 'src/index.html'
+      template: 'src/index.hbs'
     }),
     new CopyWebpackPlugin([
       {from: 'src/assets/', to: 'assets/'},
