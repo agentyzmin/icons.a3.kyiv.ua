@@ -31,8 +31,8 @@ script:
     zip -r "dist/assets/a3-kyiv-transport-icons-${t}.zip" "dist/assets/${t}"
   done
 - |
-  tar czvf "dist/assets/a3-kyiv-transport-icons.tar.gz" "dist/assets/{svg,png@{1..2}x}"
-  zip -r "dist/assets/a3-kyiv-transport-icons.zip" "dist/assets/{svg,png@{1..2}x}"
+  tar czvf "dist/assets/a3-kyiv-transport-icons.tar.gz" dist/assets/{svg,png@{1..2}x}
+  zip -r "dist/assets/a3-kyiv-transport-icons.zip" dist/assets/{svg,png@{1..2}x}
 deploy:
 - provider: pages
   allow-empty-commit: true
