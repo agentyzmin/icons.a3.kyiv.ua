@@ -51,7 +51,5 @@ deploy:
 - provider: releases
   api_key: *gh-token
   file_glob: true
-  file:
-  - dist/assets/*.tar.gz
-  - dist/assets/*.zip
+  file: dist/assets/*.{tar.gz,zip}
   skip_cleanup: true
