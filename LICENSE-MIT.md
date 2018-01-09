@@ -1,5 +1,5 @@
 # The MIT License (MIT)
-**Copyright &copy; &lt;2018> &lt;Agenty zmin (a3.kyiv.ua)>**
+**Copyright &copy; 2018 Agenty zmin (a3.kyiv.ua)**
 
 * * *
 
