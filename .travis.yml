@@ -43,9 +43,8 @@ deploy:
 - provider: releases
   api_key: *gh-token
   file_glob: true
-  file: assets/{svg,png@{1..2}x}
-  #file:
-  #- assets/svg/*
-  #- assets/png@1x/*
-  #- assets/png@2x/*
+  file:
+  - assets/svg/*
+  - assets/png@1x/*
+  - assets/png@2x/*
   skip_cleanup: true
