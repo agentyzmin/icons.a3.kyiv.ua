@@ -52,6 +52,7 @@ deploy:
   api_key: *gh-token
   file_glob: true
   file: dist/assets/*.{tar.gz,zip}
+  name: Транспортні іконки Києва. Версія ${TRAVIS_TAG}
   skip_cleanup: true
   on:
     tags: true
