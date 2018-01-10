@@ -1,5 +1,8 @@
-[![Build
-Status](https://travis-ci.org/agentyzmin/kyiv-transport-icons.svg?branch=master)](https://travis-ci.org/agentyzmin/kyiv-transport-icons)
+[![Build Status
+](https://travis-ci.org/agentyzmin/kyiv-transport-icons.svg?branch=master)
+](https://travis-ci.org/agentyzmin/kyiv-transport-icons) [![License: CC BY ND
+4.0](https://img.shields.io/badge/License-CC%20BY%20ND%204.0-yellowgreen.svg)
+](https://creativecommons.org/licenses/by-nd/4.0/)
 
 # Транспортні іконки Києва
 
