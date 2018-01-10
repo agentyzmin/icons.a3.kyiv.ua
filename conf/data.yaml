@@ -1,1 +1,44 @@
 title: Транспортні іконки Києва. Агенти змін
+svgs:
+- file: Metro Logo
+  name: Метро
+- file: Urban Rail Logo
+  name: Міська електричка
+- file: Metro M1
+  name: Червона лінія метро
+- file: Metro M2
+  name: Синя лінія метро
+- file: Metro M3
+  name: Зелена лінія метро
+- file: Metro M4
+  name: Четверта лінія метро (на&nbsp;Троєщину)
+- file: Tram
+  name: Трамвай
+- file: Bus
+  name: Автобус
+- file: Trolley
+  name: Тролейбус
+- file: Marshrutka
+  name: Маршрутка
+- file: Funicular
+  name: Фунікулер
+- file: Funicular Logo
+  name: Фунікулер (логотип)
+- file: Train
+  name: Залізниця
+- file: Airport
+  name: Аеропорт
+- file: Railway Station
+  name: Залізничний вокзал
+- file: Bus Station
+  name: Автовокзал
+- file: Port
+  name: Порт
+- file: Bike
+  name: Велотранспорт
+- file: Bike Stencil
+  name: Велотранспорт (трафарет)
+- file: Disabled
+  name: Людина з інвалідністю
+- file: Pedestrian
+  name: Пішохід
