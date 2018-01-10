@@ -1,4 +1,8 @@
 title: Транспортні іконки Києва. Агенти змін
+archive_size: '.ZIP, 0,7 МБ'
+download_button:
+  link: https://github.com/agentyzmin/kyiv-transport-icons/releases/download/2.0.2/a3-kyiv-transport-icons.zip
+  label: Завантажити пакунок
 svgs:
 - file: Metro Logo
   name: Метро
