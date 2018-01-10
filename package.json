@@ -25,6 +25,7 @@
   },
   "homepage": "https://github.com/agentyzmin/kyiv-transport-icons#readme",
   "dependencies": {
+    "babel-polyfill": "6.26.0",
     "bootstrap-beta": "4.0.0-beta",
     "ilyabirman-likely": "2.3.0"
   },

@@ -9,7 +9,7 @@ const buildContext = yaml.load(
 )
 
 module.exports = {
-  entry: './src/app.js',
+  entry: ['babel-polyfill', './src/app.js'],
   output: {
     path: __dirname + '/dist',
     filename: 'bundle.js'
@@ -45,7 +45,8 @@ module.exports = {
     }, buildContext)),
     new CopyWebpackPlugin([
       {from: 'src/assets/', to: 'assets/'},
-      {from: 'src/svg/', to: 'assets/svg/'}
+      {from: 'src/svg/', to: 'assets/svg/'},
+      {from: 'conf/', to: 'assets/conf/'}
     ])
   ]
 }
