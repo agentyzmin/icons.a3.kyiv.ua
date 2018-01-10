@@ -1,9 +1,12 @@
-var HtmlWebpackPlugin = require('html-webpack-plugin');
-var CopyWebpackPlugin = require('copy-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin')
+const CopyWebpackPlugin = require('copy-webpack-plugin')
+const yaml = require('js-yaml')
+const fs = require('fs')
 
-const buildContext = {
-  title: 'Транспортні іконки Києва. Агенти змін',
-}
+const buildContext = yaml.load(
+    fs.readFileSync(__dirname + '/conf/data.yaml'),
+    {encoding: 'utf-8'},
+)
 
 module.exports = {
   entry: './src/app.js',
@@ -26,7 +29,6 @@ module.exports = {
         use: {
           loader: 'babel-loader',
           options: {
-            //presets: ['@babel/preset-env']
             presets: ['env']
           }
         }
