@@ -1,6 +1,10 @@
 import HtmlWebpackPlugin from 'html-webpack-plugin'
 import CopyWebpackPlugin from 'copy-webpack-plugin'
 
+const buildContext = {
+  title: 'Транспортні іконки Києва. Агенти змін',
+}
+
 module.exports = {
   entry: './src/app.js',
   output: {
@@ -34,9 +38,9 @@ module.exports = {
     ]
   },
   plugins: [
-    new HtmlWebpackPlugin({
-      template: 'src/templates/index.hbs'
-    }),
+    new HtmlWebpackPlugin(Object.assign({}, {
+      template: 'src/templates/index.hbs',
+    }, buildContext)),
     new CopyWebpackPlugin([
       {from: 'src/assets/', to: 'assets/'},
       {from: 'src/svg/', to: 'assets/svg/'}
