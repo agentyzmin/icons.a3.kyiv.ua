@@ -35,7 +35,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: 'src/index.hbs'
+      template: 'src/templates/index.hbs'
     }),
     new CopyWebpackPlugin([
       {from: 'src/assets/', to: 'assets/'},
