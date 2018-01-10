@@ -2,7 +2,7 @@
 	<h2 class="center mb-5">Що всередині</h2>
 	<div class="row col-sm-12 col-lg-10 offset-lg-1">
         {{#each htmlWebpackPlugin.options.svgs as |svg| }}
-		<div class="center col-6 col-sm-3 col-lg-2 mb-4"><img class="icons" src="assets/svg/{{svg.file}}.svg" alt=""><div class="card-text">{{svg.name}}</div></div>
+		<div class="center col-6 col-sm-3 col-lg-2 mb-4"><img class="icons" src="assets/svg/{{svg.file}}.svg" alt=""><div class="card-text">{{{svg.name}}}</div></div>
         {{/each}}
 
 		<!-- <div class="icon-card center col-lg-2"><img src="svg/" alt=""><div class="card-text"></div></div> -->
