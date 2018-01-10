@@ -48,5 +48,11 @@ module.exports = {
       {from: 'src/svg/', to: 'assets/svg/'},
       {from: 'conf/', to: 'assets/conf/'}
     ])
-  ]
+  ],
+  devServer: {
+    contentBase: __dirname + "/dist",
+    compress: true,
+    open: true,
+    port: 9000
+  }
 }
