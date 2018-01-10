@@ -1,21 +1,37 @@
 import yaml from 'js-yaml'
 
-window.onload = async () => {
-
+async function* getImagesGen() {
+  let currentImg = 0
   const img = document.querySelector('#logo-carousel')
 
   const images = yaml
-      .load(await fetch('assets/conf/data.yaml'))
+      .load(
+          await (
+              await fetch('assets/conf/data.yaml')
+          ).text()
+      )
       .svgs
       .map((img) => 'assets/svg/' + img.file + '.svg')
 
   if (undefined === images) return
 
-  images.current = 1
+  const imgLen = images.length
 
-  setInterval(() => {
-    img.src = images[ images.current++ ]
-    if (images.current === images.length) images.current = 0
+  yield img
+
+  while(true) {
+      yield images[currentImg]
+      currentImg = (currentImg + 1) % imgLen
+  }
+
+}
+
+window.onload = async () => {
+  const imgGen = getImagesGen()
+  const img = (await imgGen.next()).value
+
+  setInterval(async () => {
+    img.src = (await imgGen.next()).value
   }, 600)
 
 }
